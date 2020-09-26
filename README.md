@@ -1,3 +1,4 @@
 # praticando-JS
 Práticas simples com JavaScript
-.vscode should be ignored
+
+// .vscode should be ignored
