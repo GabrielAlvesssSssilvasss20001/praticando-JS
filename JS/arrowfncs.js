@@ -1,11 +1,13 @@
 // Arrow function retornando objetos literais
 
-let soma3Obj = (a, b, c) => ({
-    valor1: a,
-    valor2: b,
-    valor3: c,
-    soma: a+b+c
-});
+function soma3Obj(a, b, c) {
+    return ({
+        valor1: a,
+        valor2: b,
+        valor3: c,
+        soma: a + b + c
+    });
+}
 
 console.log(soma3Obj(1, 4, -5));
 
@@ -57,21 +59,21 @@ console.log(obj.retornaRandom());
 
 // ou 
 
-let propsDefaultName = 'prop'
+// let propsDefaultName = 'prop'
 
-let obj2 = {
-    // Acho que o ES6 não permite definir nome (concatenando strings) e função simultaneamente na criação de um objeto literal, como faz o exemplo abaixo
-    [propsDefaultName + '1']: retornaRandomIgual(){
-        let randomNum = (Math.random() * 100).toFixed(0);
-        return randomNum;
-    },
+// let obj2 = {
+//     // Acho que o ES6 não permite definir nome (concatenando strings) e função simultaneamente na criação de um objeto literal, como faz o exemplo abaixo
+//     [propsDefaultName + '1']: retornaRandomIgual(){
+//         let randomNum = (Math.random() * 100).toFixed(0);
+//         return randomNum;
+//     },
 
-};
+// };
 
-console.log(obj2.retornaRandomIgual());
-//
+// console.log(obj2.retornaRandomIgual());
+// //
 
-const randomico = retornaRandom();
+// const randomico = retornaRandom();
 
 // while(true){
 //     let valor = prompt("Informe um valor entre 0 e 100:");

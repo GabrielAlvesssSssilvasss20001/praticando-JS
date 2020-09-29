@@ -91,3 +91,7 @@ console.log(ver3);
 // Métodos de ordenação de elementos de um array:
 
 // sort, reverse, join, reduce
+
+let sum = [1, 2, 3, 4, 5];
+
+console.log(sum.reduce(arr, value) => acc + value, 0);
