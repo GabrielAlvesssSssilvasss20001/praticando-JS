@@ -1,4 +1,5 @@
 # praticando-JS
-Práticas simples com JavaScript
+
+**Práticas com JavaScript**
 
 // .vscode should be ignored
