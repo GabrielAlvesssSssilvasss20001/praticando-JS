@@ -1,6 +1,6 @@
 # praticando-JS
 
-__Práticas com JavaScript: __
+__Práticas com JavaScript:__
 
 1. Interação com html por meio do DOM
 1. Design Patterns
