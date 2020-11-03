@@ -1,6 +1,6 @@
 // Também pode-se trabalhar com requisições utilizando Promises por meio do comando fetch:
 
-const fetch = require("cross-fetch");
+const fetch = require(fetch);
 
 fetch('http://localhost:8080/data.json')
     .then(responseStream => {
@@ -41,7 +41,7 @@ Ou seja: O await torna-as assíncronas. Sem o await, o valor retornado pelas Pro
 const simpleAsyncFunc = async() => {
     const data = await asyncTimer();
     console.log(data);
-    // A próxima linha deveria conter um fetch para exemplificar a espera da resposta de uma requisição para continuar o processamento, mas o comando está dando problemas:
+    // A próxima linha deveria conter um fetch para exemplificar a espera da resposta de uma requisição para continuar o processamento, mas a importação do módulo está dando problemas:
     const dataII = await asyncReqSimulation();
 
     return dataII;

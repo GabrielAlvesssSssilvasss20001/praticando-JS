@@ -20,13 +20,18 @@ let array3 = Array(1, 2, 3);
 // console.log(tamanho, array4);
 // const pRemovido = array4.shift();
 // console.log(pRemovido, array4);
-
+let array1 = [1, 2, 3];
 let array4 = [4, 5, 6];
 let arrayAte6 = array1.concat(array4);
 console.log(arrayAte6);
 
+// => array6 = [];
+
 array4 = arrayAte6.splice(3);
+// => array4 = [4, 5, 6];
+
 array1 = arrayAte6.splice(0);
+// => array1 = [1, 2, 3];
 
 console.log(array1);
 console.log(array4);
@@ -34,6 +39,8 @@ console.log(arrayAte6);
 
 arrayAte6 = [1, 2, 3, 4, 5, 6];
 console.log(arrayAte6);
+
+// [1, 2, 3, 4, 5, 6];
 
 arrayAte6.splice(2, 4, 4, 5, 6, 7, 'fim_da_lista');
 console.log(arrayAte6);
@@ -44,9 +51,11 @@ arrayAte6.forEach((value, position, array) => {
     console.log(`O Valor ${value}, pertencente à posição ${position}, pertence à array [${array}]`);
 });
 
+arrayAte6 = [1, 2, 3, 4, 5, 6];
 let array6nova = arrayAte6.map((valor, index) =>
-    valor + 1
-)
+    valor + 1 + index
+);
+console.log(array6nova);
 
 console.log(array6nova);
 
@@ -94,4 +103,4 @@ console.log(ver3);
 
 let sum = [1, 2, 3, 4, 5];
 
-console.log(sum.reduce(arr, value) => acc + value, 0);
+console.log(sum.reduce((arr, value) => acc + value, 0));
