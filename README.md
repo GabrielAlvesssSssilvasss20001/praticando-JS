@@ -11,5 +11,6 @@ __Práticas com JavaScript:__
 1. Symbols, iterators e generators
 1. Promises
 1. Fetch, async e await
+1. TypeScript
 
 // .vscode should be ignored
