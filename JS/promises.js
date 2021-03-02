@@ -74,15 +74,15 @@ const doOtherThingPromise = () =>
 
 Promise.all([doSomethingPromise(), doOtherThingPromise()]).then(data => {
     let splt1 = data[0].split('');
-    console.log("Dados 1 síncrono: ", splt1);
+    console.log("Dados 1 - assíncrono: ", splt1);
     let splt2 = data[1].split('');
-    console.log("Dados 2 síncrono: ", splt2);        
+    console.log("Dados 2 - assíncrono: ", splt2);        
 })
     .catch(err => {
         console.log(err);
     });
 
- // Execução assíncrona/sequencial:
+ // Execução síncrona/sequencial:
 
 doSomethingPromise()
     .then(data => {
