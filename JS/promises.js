@@ -15,7 +15,7 @@
         }, 1000);
     };
 
-    // --> A tarefa abaixo simula a execução de duas tarefas sequenciais (assíncronas) + setTimeout dos dados consumidos e seus repectivos tratamentos de erros.
+    // --> A tarefa abaixo simula a execução de duas tarefas sequenciais (síncronas) + setTimeout dos dados consumidos e seus repectivos tratamentos de erros.
 
     function doAll() {
         try {
